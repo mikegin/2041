@@ -1,0 +1,53 @@
+import java.util.*;
+import java.io.*;
+import java.lang.*;
+public class MG_capital{
+	public static void main(String [] args){
+		
+		System.out.println(cgi_lib.Header());		
+		
+		Hashtable form_data = cgi_lib.ReadParse(System.in);
+		
+		System.out.println(cgi_lib.HtmlTop("Capital Accumulation" ));
+		
+		String fn = (String)form_data.get("MG_first_name");
+
+		String ln = (String)form_data.get("MG_last_name");
+		
+		String cp = (String)form_data.get("MG_capital");
+		double cap = Double.parseDouble(cp);
+		
+ 		String rt = (String)form_data.get("MG_rate");
+		double rat = Double.parseDouble(rt);
+		
+		String yr = (String)form_data.get("MG_years");
+		double yer = Double.parseDouble(yr);
+		
+		
+
+		System.out.println("<div align=\"center\" style=\"background-color:yellow\">First name: " + fn + 
+				"<br /><br />Last name: " + ln + 
+				"<br /><br />Your initial capital: " + cap + 
+				"<br /><br />Your interest rate: " + rat +"</div><br />");
+		
+		double amount = 0;
+		System.out.println("<div align=\"center\" style=\"background-color:gray\">");
+		for(int i = 1; i <= yer; i++){
+			amount = cap*rat;
+			cap+=amount;
+			System.out.println("Interest amount after one year is " +
+				amount);
+			if(yer>i){
+				System.out.println("<br /><br />");
+			}
+		}
+		System.out.println("</div>");
+		
+		//System.out.println("<div align=\"center\" style=\"background-color:gray\">Interest amount after one year is " +
+				//cap + "</div><br /><br />");
+
+		System.out.println("<div align=\"center\">Your capital after " + yer + " years is: " + cap + "</div>");  
+
+		System.out.println(cgi_lib.HtmlBot());
+	}
+}

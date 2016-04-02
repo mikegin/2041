@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>EECS2041 Mikhail Gindin</title>
+</head>
+<body style="font-family:arial; font-size:20px;">
+<table style="background-color: #E6E6FA; border: solid 2px white; border-spacing: 10px;">
+<tr><td style="font-size: 400%; line-height:120%; background-color: #deb887; font-family: algerian; text-align: center;" colspan="4">
+EECS2041
+</td>
+</tr>
+<tr>
+<td style="background-color:#deb887; font-family:algerian; padding:10px;"><a href="lab2/HTML5_MathFormulas.html">LAB 2</a></td>
+<td style="background-color:#FFDEAD; font-family:arial; padding:10px;" rowspan="5">Net-centric computing encompasses numerous technologies but is based on a three underlying principles: Client-Server Computing, Content Management and Browser-Based Application. This course covers these principles in general and examines a representative subset of the prevailing technologies. Topics include network programming; web applications; database connectivity; content representation and presentation and client-side programming.</td>
+<td style="background-color:#deb887; font-family:arial; padding:10px;" rowspan="5">A web application is an application that is accessed by users ove a netwrok such as the Internet or an intranet. The term may also mean a computer software application that is coded in a brower-supoorted programming language (such as JavaScipt, combined with a browser-rendered markup language like HTML) and reliant on a common web browser to render the application executable.</td>
+<td style="background-color:#FFDEAD; font-family:arial; padding:10px;" rowspan="5">Web applications are popular due to the ubiquity of web browsers, and the conviniece of using a web browser as a client, somtimes called a thin client. The ability to update and maintain web applications without distributing and installing software on potentially thousands of client computers is a key reason for their popularity, as is the inherent support of cross-platform compatiblity. Common web applications include webmail, online retail sales, online auctions, wikis and many other functions.</td>
+</tr>
+<tr>
+<td style="background-color:#deb887; font-family:algerian; padding:10px;"><a href="lab3/index.html">LAB 3</a></td>
+</tr>
+<tr>
+<td style="background-color:#deb887; font-family:algerian; padding:10px;"><a href="lab4/index.html">LAB 4</td>
+</tr>
+<tr>
+<td style="background-color:#deb887; font-family:algerian; padding:10px;">LAB 5</td>
+</tr>
+<tr>
+<td style="background-color:#deb887; font-family:algerian; padding:10px;">LAB 6</td>
+</tr>
+<tr>
+<td style="font-size: 400%; line-height:120%; background-color: #deb887; font-family: algerian; text-align: center;" colspan="4">
+WINTER 2015
+</td>
+</tr>
+
+</table>
+</body>
+</html>

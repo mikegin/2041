@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset="UTF-8" />
+<title>Using DOM</title> 
+<script>
+function changeList()
+{
+/*
+for(var i = 0; document.getElementById("e1").childNodes.length; i++){
+	alert(i);
+}
+*/
+}
+
+function count()
+{
+
+}
+</script>
+</head>
+<body id= "bd" style="font-family:arial; color:black; font-size:normal; ">
+<div id="list" style="background-color:yellow; width:40%;">
+<h3>Lists</h3>
+<ul >
+<li >l<sub>1  </sub>    
+<ul id="e1">
+<li>l<sub>11</sub>-a</li>
+<li>l<sub>12</sub>-b</li>
+<li>l<sub>13</sub>-a</li>
+<li>l<sub>14</sub>-a</li>
+<li>l<sub>15</sub>-b</li>
+<li>l<sub>16</sub>-b</li>
+</ul></li>
+<li >l<sub>2  </sub>    
+<ul id="e2"> 
+<li>l<sub>21</sub>-b</li>
+<li>l<sub>22</sub>-a</li>
+<li>l<sub>23</sub>-a</li>
+<li>l<sub>24</sub>-b</li>
+</ul></li>
+</ul>
+</div>
+<br />
+<input type="button" onclick="changeList()" value="Change list elements                " /><br />
+<br />
+<input type="button" onclick="count()" value="Count a and b in  <li> elements" /><br />
+<br />
+</body>
+</html>

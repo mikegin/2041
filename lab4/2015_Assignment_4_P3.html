@@ -1,0 +1,217 @@
+<html>
+<head>
+<title>Assignment 4_MIKHAIL GINDIN</title>
+<style type="text/css">
+html{
+	border: dotted 2px #000000;
+	width: 95%;
+	margin: 10;
+	padding: 5;	
+}
+table{
+	border: 5px solid #006400;
+	margin: 10px;
+	background: #c0c0c0;
+	width: 90%;
+	vertical-align: middle;
+}
+td{
+	width: 33%;
+	background: #8FBC8F;
+	padding:10px;
+	font-family:arial; 
+	font-size: 20;
+	font-weight:bold;
+	margin: 5px;
+		
+}
+th{
+	width: 100%;
+	background: #8FBC8F;
+	padding:10px;
+		
+}
+select{
+	width: 80%;
+	background:#c0c0c0; 
+}
+textarea{
+	background:#c0c0c0;	
+}
+input{
+	background:#c0c0c0;	
+}
+</style>
+<script>
+var MG_flag = 1;
+function onClick(){
+	if(MG_flag == 1){
+		alert("Something is not right; Check again");
+		return;
+	}
+	
+	var MG_id = document.getElementById("MG_Student_ID").value;
+	
+	var MG_fn = document.getElementById("MG_Student_FN").value;
+	
+	var MG_gn = document.getElementById("MG_Student_GN").value;
+	
+	
+	var MG_street = document.getElementById("MG_Street").value;
+	
+	var MG_city = document.getElementById("MG_City").value;
+	var MG_prov = document.getElementById("MG_Prov").value;
+	var MG_sem;
+	if(document.getElementById("sum").checked){
+	MG_sem = document.getElementById("sum").value;
+	}
+	else if(document.getElementById("win").checked){
+	MG_sem = document.getElementById("win").value;
+	}
+	else if(document.getElementById("fall").checked){
+	MG_sem = document.getElementById("fall").value;
+	}
+	var MG_courses = document.getElementById("MG_Courses");
+	var MG_c = "";
+	for(var MG_i = 0, MG_max = MG_courses.options.length; MG_i<MG_max; MG_i++){
+		if(MG_courses.options[MG_i].selected){
+			MG_c += MG_courses.options[MG_i].value;
+			MG_c+="<br />";
+		}
+	}
+	
+	document.write("<head><title>Student Form Revision MIKHAIL_GINDIN</title></head><body style='background-color:green'><br /><div style='background-color:yellow;text-align:center;width:85%'><div style='font-size:30;font-family:arial black'>STUDENT REGISTRATION FORM <br /> REVISION</div><br /><br /><div style='font-style:italic;font-size:20;font-family:arial'><b>Student ID: </b><b>"+MG_id +" </b></div><div style='font-style:italic;font-size:20;font-family:arial'><b>Student Name: </b><b>" + MG_gn + " " + MG_fn+"</b></div><br /><div style='font-style:italic;font-size:20;font-family:arial'><b>Student Address:</b></div><div style='font-family:courier new'><pre><b> "+ MG_street+"\n"+ MG_city+"\n"+MG_prov+"</b></pre><br /></div><div style='font-size:30;font-family:arial black'>STUDENT COURSES</div><br /><div><b>" + MG_sem + "</b></div><br /><div>"+ MG_c+"</div></div></body>");
+	
+}
+
+function onb(element){
+	MG_flag = 0;
+	var MG_x = element.name;
+	if(MG_x == "MG_Student_ID"){
+		var MG_y = element.value;
+		if(MG_y.length != 10 || MG_y==0 || MG_y[0]!=MG_y[MG_y.length-1] || MG_y[1]!=MG_y[MG_y.length-2]){
+			alert("Student ID incorrect");
+			MG_flag = 1;
+			return;
+		}
+	}
+	if(MG_x == "MG_Student_FN"){
+		var MG_y = element.value;
+		if((MG_y.search(/^\w+$/))<0 || MG_y.length<1){
+			alert("Family Name incorrect");
+			MG_flag = 1;
+			return;
+		}
+	}
+	if(MG_x == "MG_Student_GN"){
+		var MG_y = element.value;
+		if((MG_y.search(/^\w+$/))<0 || MG_y.length<1){
+			alert("Given Name incorrect");
+			MG_flag = 1;
+			return;
+		}
+	}
+	}
+</script>
+</head>
+<body>
+<form id="MG_form" action="">
+<table cellspacing="10" id="MG_table" name="MG_table">
+<tr>
+<td colspan="3" style="text-align: center;font-size: 30;">
+STUDENT REGISTRATION
+</td>
+</tr>
+<tr>
+	<td>
+	STUDENT ID:
+	<br />
+	<input type="text" id="MG_Student_ID" name="MG_Student_ID" size="20" maxlength="20" onblur="onb(this)" >
+	</td>
+	<td style="text-align: center;">
+	ADDRESS
+	</td>
+	<td style="text-align: center;">
+	COURSES
+	</td>
+</tr>
+<tr>
+	<td>
+	STUDENT FAMILY NAME:
+	<br />
+	<input type="text" id="MG_Student_FN" name="MG_Student_FN" size = "30" maxlength="30" onblur="onb(this)">
+	</td>
+	<td rowspan="2">
+	Street:
+	<br />
+	<textarea id="MG_Street" name="MG_Street" rows="4" cols="30"></textarea>
+	<br />
+	<br />
+	City:
+	<br />
+	<select id="MG_City" name="MG_City">
+		<option value="Mississauga">Mississauga</option>
+		<option selected value="Toronto">Toronto</option>
+		<option value="Montreal">Montreal</option>
+		<option value="Quebec">Quebec</option>
+		<option value="London">London</option>
+		<option value="Hamilton">Hamilton</option>
+		<option value="Sudbury">Sudbury</option>
+		<option value="Windsor">Windsor</option>
+		<option value="Other">Other</option>
+		
+	</select>
+	<br />
+	<br />
+	Province/Territory:
+	<br />
+	<select id="MG_Prov" name="MG_Prov">
+		<option value="QUEBEC">QUEBEC</option>
+		<option selected value="ONTARIO">ONTARIO</option>
+		<option value="NEW BRUNSWICK">NEW BRUNSWICK</option>
+		<option value="MANITOBA">MANITOBA</option>
+		<option value="NOVA SCOTIA">NOVA SCOTIA</option>
+		<option value="ALBERTA">ALBERTA</option>
+		<option value="OTHER">OTHER</option>
+		
+	</select>
+	</td>
+	<td id="MG_Semester" name="MG_Semester">
+	SEMESTER:
+	<br />
+	<input type="radio" name="sem" id="win" value="WINTER">WINTER
+	<br />
+	<input type="radio" name="sem" id="fall" value="FALL">FALL
+	<br />
+	<input type="radio" name="sem" id="sum" value="SUMMER">SUMMER
+	</td>
+</tr>
+<tr>
+	
+	<td>
+	STUDENT GIVEN NAME:
+	<br />
+	<input type="text" id="MG_Student_GN" name="MG_Student_GN" size ="30" maxlength="30" onblur="onb(this)">
+	</td>
+	<td>
+	SELECT ONE or MANY COURSES to ENROL:
+	<br />
+	<select id="MG_Courses" name="MG_Courses" multiple>
+		<option value="EECS2041">EECS2041</option>
+		<option value="EECS2042">EECS2042</option>
+		<option value="EECS2043">EECS2043</option>
+		<option value="EECS2044">EECS2044</option>
+		<option value="EECS2045">EECS2045</option>
+		<option value="EECS2046">EECS2046</option>
+		<option value="EECS2047">EECS2047</option>
+		
+	</select>
+	</td>
+</tr>
+</table>
+<p>
+To see you choices: <button type="button" onclick="onClick()">Click Me!</button>
+</p>
+</form>
+</body>
+</html>

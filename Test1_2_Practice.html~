@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Mikhail Gindin 212989935</title>
+<style>
+ol{
+	font-weight:bold;
+}
+table{
+	background: black;
+	vertical-align: middle;
+	border-spacing: 4px;
+}
+td{
+	color: white;
+	border: 2px solid white;
+	padding:10px;
+}
+</style>
+</head>
+<body>
+	<ol style="list-style-type:upper-alpha;">
+		<li> Computer Science: HTML and CSS
+			<ol style="list-style-type:lower-alpha;">
+				<li>Chapter 1
+					<ul style="list-style-type:square;">
+						<li>Paragraph 1</li>
+						<li>Paragraph 2</li>
+						<li>
+							<table style="float:left">
+								<tr>
+									<td colspan="6">Test 1-2 Practice Mariana Kant</td>
+								</tr>
+								<tr>
+									<td rowspan="5">E<br />E<br />C<br />S</td>
+									<td rowspan="2"> 1 </td>
+									<td rowspan ="2"> A </td>
+									<td rowspan="5">2<br />0<br />4<br />1</td>
+								</tr>
+								<tr>
+								</tr>
+								<td rowspan="2"> 2 </td>
+									<td rowspan ="2"> B </td>
+								<tr>
+								</tr>
+								<tr>
+									<td rowspan="2"> 3 </td>
+									<td rowspan ="2"> C </td>
+								</tr>
+								
+							</table>
+							<p style="font-style:normal;float:left;">
+							EECS2041:Net Centric course. Descrive the syntax rules of HTML5 and explain the difference between well-formed and valid. State the meaning of the html-related terms: tag, elemet, attribute,root, whitespace, character entities, empty element, etc. Understand the use of some new HTML5 elements as:article, aside,footer, nav and section. Create HTML pages with a specified content and structure. The specs may invlove liste, tables, forms, anchors, images, buttons, etc.
+</p>						
+</li>
+				</li>
+				<li>Chapter 2
+					<ul>
+						<li>Paragraph 1</li>
+						<li>Paragraph 2</li>
+						<li>Paragraph 3
+							<ul>
+								<li>P3.1</li>
+								<li>P3.2</li>
+							</ul>
+						</li>
+						<li>Paragraph 4</li>
+										
+			</ol>
+		</li>
+		<li> Computer Science: INTERNET</li>
+		<li> Computer Science: DataBases</li>
+	</ol>
+</body>
+</html>

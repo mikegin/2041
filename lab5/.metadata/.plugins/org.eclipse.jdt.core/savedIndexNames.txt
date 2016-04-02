@@ -1,0 +1,14 @@
+INDEX VERSION 1.126+/eecs/home/mikegin/www/2041/lab5/.metadata/.plugins/org.eclipse.jdt.core
+1222370523.index
+3698408633.index
+2318228600.index
+1259284790.index
+1164181348.index
+519664731.index
+914198445.index
+2911206481.index
+231804541.index
+3372413719.index
+1195773988.index
+4071405630.index
+1696507936.index

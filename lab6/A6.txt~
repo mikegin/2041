@@ -1,0 +1,83 @@
+1.
+select artobj.artid, artist.artist name, artobj.artyear, artobj.artprice from sculpture
+>join artobj on artobj.artid = sculpture.artid
+>join artist on artist.artistid = artobj.artistid
+
+ARTID|ARTISTNAME|ARTYEAR   |ARTPRICE
+---------------------------------------
+Art03|MK_Artist2|2000-02-12|500000
+Art04|MK_Artist2|2001-02-12|300000
+
+2.
+select artobj.artid, artist.artistname, artobj.artyear, artobj.artprice from painting
+> join artobj on artobj.artid = painting.artid
+> join artist on artist.artistid = artobj.artistid;
+
+ARTID|ARTISTNAME|ARTYEAR   |ARTPRICE
+---------------------------------------
+Art01|MK_Artist1|1700-02-12|100000
+Art02|MK_Artist1|1690-02-12|500000
+
+3.
+select artobj.artistid, artist.artistname, artobj.artid, painting.ptype, painting.pmat from artist
+join artobj on artobj.artistid = artist.artistid
+join painting on painting.artid = artobj.artid;
+
+ARTI&|ARTISTNAME|ARTID|PTYPE          |PMAT
+------------------------------------------------------
+00001|MK_Artist1|Art01|oil            |canvas
+00001|MK_Artist1|Art02|oil            |wood
+
+4.
+select artistid from artist where artistid not in 
+(select artistid from artobj where artid in 
+(select artid from sculpture));
+
+ARTI&
+-----
+00001
+00003
+00004
+00005
+
+5.
+select artistid, artistname, acountry, aepoch, astyle from artist where artistid not in 
+(select artistid from artobj where artid in 
+(select artid from sculpture));
+
+ARTI&|ARTISTNAME|ACOUNTRY  |AEPOCH         |ASTYLE
+------------------------------------------------------
+00001|MK_Artist1|Holland   |Renaissance    |Academic
+00003|MK_Artist3|USA       |Modern         |Modern
+00004|MK_Artist4|Canada    |Modern         |Modern
+00005|MK_Artist5|France    |Renaissance    |Academic
+
+6.
+select count(*) as "NBR P", avg(artprice) as "AVG P PR" from artobj where artid in (select artid from painting);
+
+NBR P        |AVG P PR        
+-----------------------
+2          |300000
+
+7.
+select count(*) as "NBR S", sum(artprice) as "TOTAL S PR" from artobj where artid in (select artid from sculpture);
+NBR S          |TOTAL S PR          
+-----------------------
+2          |800000
+
+8.
+
+select exposed.exibname, exibition.exibplace, exposed.artid, artobj.arttitle, artobj.artprice from artobj
+> join exposed on exposed.artid = artobj.artid
+> join exibition on exibition.exibname = exposed.exibname order by exposed.exibname, exposed.artid;
+EXIBNAME       |EXIBPLACE                     |ARTID|ARTTITLE            |ARTPRICE   
+-------------------------------------------------------------------------------------
+Exib01         |Hamilton                      |Art01|The lake with sun   |100000     
+Exib01         |Hamilton                      |Art02|Large river         |500000     
+Exib01         |Hamilton                      |Art03|WAR                 |500000     
+Exib01         |Hamilton                      |Art04|Friends             |300000     
+Exib02         |TORONTO                       |Art03|WAR                 |500000     
+Exib02         |TORONTO                       |Art04|Friends             |300000     
+Exib02         |TORONTO                       |Art05|Reconstruction      |10900
+
+

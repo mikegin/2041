@@ -1,0 +1,147 @@
+<html>
+<head>
+<title>Assignment 3_2_MIKHAIL GINDIN</title>
+<style type="text/css">
+html{
+	border: dotted 2px #000000;
+	width: 95%;
+	margin: 10;
+	padding: 5;	
+}
+table{
+	border: 5px solid #006400;
+	margin: 10px;
+	background: #c0c0c0;
+	width: 90%;
+	vertical-align: middle;
+}
+td{
+	width: 33%;
+	background: #8FBC8F;
+	padding:10px;
+	font-family:arial; 
+	font-size: 20;
+	font-weight:bold;
+	margin: 5px;
+		
+}
+th{
+	width: 100%;
+	background: #8FBC8F;
+	padding:10px;
+		
+}
+select{
+	width: 80%;
+	background:#c0c0c0; 
+}
+textarea{
+	background:#c0c0c0;	
+}
+input{
+	background:#c0c0c0;	
+}
+</style>
+</head>
+<body>
+<form id="MG_form" action="">
+<table cellspacing="10">
+<tr>
+<td colspan="3" style="text-align: center;font-size: 30;">
+STUDENT REGISTRATION
+</td>
+</tr>
+<tr>
+	<td>
+	STUDENT ID:
+	<br />
+	<input type="text" id="MG_Student_ID" name="MG_Student_ID" size="20" maxlength="20">
+	</td>
+	<td style="text-align: center;">
+	ADDRESS
+	</td>
+	<td style="text-align: center;">
+	COURSES
+	</td>
+</tr>
+<tr>
+	<td>
+	STUDENT FAMILY NAME:
+	<br />
+	<input type="text" id="MG_Student_FN" name="MG_Student_FN" size = "30" maxlength="30">
+	</td>
+	<td rowspan="2">
+	Street:
+	<br />
+	<textarea id="MG_Street" name="MG_Street" rows="4" cols="30">
+	</textarea>
+	<br />
+	<br />
+	City:
+	<br />
+	<select id="MG_City" name="MG_City">
+		<option value="Mississauga">Mississauga</option>
+		<option selected value="Toronto">Toronto</option>
+		<option value="Montreal">Montreal</option>
+		<option value="Quebec">Quebec</option>
+		<option value="London">London</option>
+		<option value="Hamilton">Hamilton</option>
+		<option value="Sudbury">Sudbury</option>
+		<option value="Windsor">Windsor</option>
+		<option value="Other">Other</option>
+		
+	</select>
+	<br />
+	<br />
+	Province/Territory:
+	<br />
+	<select id="MG_Prov" name="MG_Prov">
+		<option value="QUEBEC">QUEBEC</option>
+		<option selected value="ONTARIO">ONTARIO</option>
+		<option value="NEW BRUNSWICK">NEW BRUNSWICK</option>
+		<option value="MANITOBA">MANITOBA</option>
+		<option value="NOVA SCOTIA">NOVA SCOTIA</option>
+		<option value="ALBERTA">ALBERTA</option>
+		<option value="OTHER">OTHER</option>
+		
+	</select>
+	</td>
+	<td id="MG_Semester" name="MG_Semester">
+	SEMESTER:
+	<br />
+	<input type="radio" name="sem" value="WINTER">WINTER
+	<br />
+	<input type="radio" name="sem" value="FALL">FALL
+	<br />
+	<input type="radio" name="sem" value="SUMMER">SUMMER
+	</td>
+</tr>
+<tr>
+	
+	<td>
+	STUDENT GIVEN NAME:
+	<br />
+	<input type="text" id="MG_Student_GN" name="MG_Student_GN" size ="30" maxlength="30">
+	</td>
+	<td>
+	SELECT ONE or MANY COURSES to ENROL:
+	<br />
+	<select id="MG_Courses" name="MG_Courses" multiple>
+		<option value="EECS2041">EECS2041</option>
+		<option value="EECS2042">EECS2042</option>
+		<option value="EECS2043">EECS2043</option>
+		<option value="EECS2044">EECS2044</option>
+		<option value="EECS2045">EECS2045</option>
+		<option value="EECS2046">EECS2046</option>
+		<option value="EECS2047">EECS2047</option>
+		
+	</select>
+	</td>
+</tr>
+</table>
+<p>
+To see you choices: <button type="button">Click Me!</button>
+</p>
+</form>
+</body>
+</html>

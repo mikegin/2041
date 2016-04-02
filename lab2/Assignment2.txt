@@ -1,0 +1,56 @@
+Lab 2
+
+1.
+a. http://www.eecs.yorku.ca/~mkant/2014_CSE2041/Course/HTML/2014_Semantic_HTML_Ex_1.html
+b. 2 requests curl 
+http://www.eecs.yorku.ca/~mkant/2014_CSE2041/Course/HTML/images/book_deitel.jpg
+http://www.eecs.yorku.ca/~mkant/2014_CSE2041/Course/HTML/2015_Semantic_HTML_CSS_Ex_1.html
+c.
+-Accept	text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept	image/png,image/*;q=0.8,*/*;q=0.5
+-http://www.eecs.yorku.ca/~mkant/2014_CSE2041/Schedule/Schedule_EECS_2041_W_2015.html
+http://www.eecs.yorku.ca/~mkant/2014_CSE2041/Course/HTML/2014_Semantic_HTML_Ex_1.html
+d. There are 3 (<section>...</section>) tags
+e. header, section id = "a", section id = "b", section id = "c", hr, aside, hr, footer
+
+2.
+a. All-58 requests 
+b. HTML-1 request
+c. CSS-10 requests
+d. Javascript-21 requests
+e. http://eecs.lassonde.yorku.ca/wp-content/plugins/revslider/rs-plugin/assets/loader.gif
+
+Problem 3
+a.Content-Location  http://gaia2007.cse.yorku.ca/Default.htm
+b.Content-Type	text/html
+c.Server	Microsoft-IIS/5.1
+http://gaia2007.cse.yorku.ca/index.html:
+Status - 404 Object Not Found
+This is because the web page is not available
+
+a. Not shown
+b. Content-Type	text/html
+c. Server Apache-Coyote/1.1
+http://gaia2007.cse.yorku.ca:8080/index.html:
+Status- 304 Not Modified
+The client had performed a GET request and access is allowed, but the document has not been modified.
+
+Problem 4
+a. ELinks is a text mode WWW browser
+b. 
+http://www.eecs.yorku.ca/~mkant/2041/HTML/SIMPLE.html
+A simple HTML page
+
+http://www.eecs.yorku.ca/~mkant/2041/HTML/SIMPLE_HTML.html
+This is test
+	I am a browser that cannot display images
+
+http://www.eecs.yorku.ca/~mkant/2041/HTML/FORM_GET.html
+Do you want to post from data to URL http://www.eecs.yorku.ca/~mkant/2041/Perl/form_get.pl?firs_name=Mike&last_name=?
+
+http://www.eecs.yorku.ca/~mkant/2041/HTML/2013_Tables.html
+Authentication was requested
+
+c. buttons - it highlights, tables- plain with no outline, textboxes- are underlined
+d. elinks exists as a fast way to transfer simple data
+used for: HTTP and Proxy authentication, Persistent HTTP cookies, Suppor for browser scripting in Perl/Ruby,Lua and GNU Guile, etc

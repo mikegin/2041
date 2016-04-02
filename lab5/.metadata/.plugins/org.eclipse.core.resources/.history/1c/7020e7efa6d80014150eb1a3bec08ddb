@@ -1,0 +1,9 @@
+package testlab5;
+
+public class test {
+	public static void main(String[]args){
+		
+		String title = "hello ";
+		cgitest.HtmlTop(title);
+	}
+}

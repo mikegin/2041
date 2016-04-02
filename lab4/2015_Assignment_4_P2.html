@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset="UTF-8" />
+<title>Using DOM</title> 
+<script>
+function changeList()
+{
+var MG_e1 = document.getElementById("e1");
+var MG_e2 = document.getElementById("e2");
+var MG_l1 = document.getElementById("e1").parentNode;
+var MG_l2 = document.getElementById("e2").parentNode;
+MG_l1.insertBefore(MG_e2, MG_l1.firstnode);
+MG_l2.insertBefore(MG_e1, MG_l2.firstnode);
+
+
+}
+
+function count()
+{
+
+var MG_li = document.getElementsByTagName("li");
+var MG_a = 0;
+var MG_b = 0;
+for(var MG_i = 0, MG_max = MG_li.length; MG_i<MG_max; MG_i++){
+	
+	if(MG_li[MG_i].innerHTML.search(/a$/)>0){
+		MG_a++;
+	}
+	if(MG_li[MG_i].innerHTML.search(/b$/)>0){
+		MG_b++;
+	}
+}
+alert("#a="+MG_a+" #b="+MG_b);
+}
+</script>
+</head>
+<body id= "bd" style="font-family:arial; color:black; font-size:normal; ">
+<div id="list" style="background-color:yellow; width:40%;">
+<h3>Lists</h3>
+<ul >
+<li >l<sub>1  </sub>    
+<ul id="e1">
+<li>l<sub>11</sub>-a</li>
+<li>l<sub>12</sub>-b</li>
+<li>l<sub>13</sub>-a</li>
+<li>l<sub>14</sub>-a</li>
+<li>l<sub>15</sub>-b</li>
+<li>l<sub>16</sub>-b</li>
+</ul></li>
+<li >l<sub>2  </sub>    
+<ul id="e2"> 
+<li>l<sub>21</sub>-b</li>
+<li>l<sub>22</sub>-a</li>
+<li>l<sub>23</sub>-a</li>
+<li>l<sub>24</sub>-b</li>
+</ul></li>
+</ul>
+</div>
+<br />
+<input type="button" onclick="changeList()" value="Change list elements                " /><br />
+<br />
+<input type="button" onclick="count()" value="Count a and b in  <li> elements" /><br />
+<br />
+</body>
+</html>

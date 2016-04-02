@@ -1,0 +1,34 @@
+<html>
+<head>
+<style>
+input{
+	margin: 2px;
+}
+</style>
+</head>
+<body>
+<br />
+<div style="text-align:right;width:80%">
+CAPITAL CALCULATOR
+</div>
+<br />
+<hr />
+<FORM action="MG_capital.cgi" method="GET">
+<p style="background-color:yellow;border-color:black;border-style:solid;border-width: 2px; width:50%; padding:2px">
+Your first name: <input type="test" name="MG_first_name">
+<br />
+Your last name: <input type="test" name="MG_last_name">
+<br />
+Initial capital:<input type="test" name="MG_capital">
+<br />
+Interest rate: <input type="test" name="MG_rate">
+<br />
+I like to know my capital after:<input type="test" name="MG_years">years
+</p>
+<br />
+<input type="submit" value="SUBMIT">
+<br />
+<input type="button" value="Reset">
+</FORM>
+</body>
+</html>

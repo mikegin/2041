@@ -1,0 +1,235 @@
+!SESSION 2015-04-06 09:43:52.331 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_67
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product /eecs/home/mikegin/www/2041/lab5/src/MG_get.java
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product /eecs/home/mikegin/www/2041/lab5/src/MG_get.java
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2015-04-06 10:14:30.191
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [/eecs/local/pkg/jdk-1.7.0_67/jre/lib/rt.jar is not on its project's build path]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getRawClasspathEntry(PackageFragmentRoot.java:557)
+	at org.eclipse.jdt.internal.core.JavaElement.getJavadocBaseLocation(JavaElement.java:670)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1009)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:995)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:499)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:694)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:612)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:604)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2015-04-06 10:14:30.192
+!MESSAGE /eecs/local/pkg/jdk-1.7.0_67/jre/lib/rt.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2015-04-06 10:14:45.560
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [/eecs/local/pkg/jdk-1.7.0_67/jre/lib/rt.jar is not on its project's build path]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getResolvedClasspathEntry(PackageFragmentRoot.java:573)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getJavadocBaseLocation(JavaDocLocations.java:310)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getJavadocLocation(JavaDocLocations.java:450)
+	at org.eclipse.jdt.ui.JavaUI.getJavadocLocation(JavaUI.java:985)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getBaseURL(JavaDocLocations.java:611)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:699)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:612)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:604)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2015-04-06 10:14:45.561
+!MESSAGE /eecs/local/pkg/jdk-1.7.0_67/jre/lib/rt.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2015-04-06 10:14:46.156
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [/eecs/local/pkg/jdk-1.7.0_67/jre/lib/rt.jar is not on its project's build path]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getResolvedClasspathEntry(PackageFragmentRoot.java:573)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getJavadocBaseLocation(JavaDocLocations.java:310)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getJavadocLocation(JavaDocLocations.java:450)
+	at org.eclipse.jdt.ui.JavaUI.getJavadocLocation(JavaUI.java:985)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getBaseURL(JavaDocLocations.java:611)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:699)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:612)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:604)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2015-04-06 10:14:46.156
+!MESSAGE /eecs/local/pkg/jdk-1.7.0_67/jre/lib/rt.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2015-04-06 10:14:48.264
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [/eecs/local/pkg/jdk-1.7.0_67/jre/lib/rt.jar is not on its project's build path]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getResolvedClasspathEntry(PackageFragmentRoot.java:573)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getJavadocBaseLocation(JavaDocLocations.java:310)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getJavadocLocation(JavaDocLocations.java:450)
+	at org.eclipse.jdt.ui.JavaUI.getJavadocLocation(JavaUI.java:985)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getBaseURL(JavaDocLocations.java:611)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:699)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:612)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:604)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2015-04-06 10:14:48.264
+!MESSAGE /eecs/local/pkg/jdk-1.7.0_67/jre/lib/rt.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2015-04-06 10:18:41.465
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [/eecs/local/pkg/jdk-1.7.0_67/jre/lib/rt.jar is not on its project's build path]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getResolvedClasspathEntry(PackageFragmentRoot.java:573)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getJavadocBaseLocation(JavaDocLocations.java:310)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getJavadocLocation(JavaDocLocations.java:450)
+	at org.eclipse.jdt.ui.JavaUI.getJavadocLocation(JavaUI.java:985)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getBaseURL(JavaDocLocations.java:611)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:699)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:612)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:604)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2015-04-06 10:18:41.465
+!MESSAGE /eecs/local/pkg/jdk-1.7.0_67/jre/lib/rt.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2015-04-06 10:22:33.354
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [/eecs/local/pkg/jdk-1.7.0_67/jre/lib/rt.jar is not on its project's build path]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getResolvedClasspathEntry(PackageFragmentRoot.java:573)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getJavadocBaseLocation(JavaDocLocations.java:310)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getJavadocLocation(JavaDocLocations.java:450)
+	at org.eclipse.jdt.ui.JavaUI.getJavadocLocation(JavaUI.java:985)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getBaseURL(JavaDocLocations.java:611)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:699)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:612)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:604)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2015-04-06 10:22:33.354
+!MESSAGE /eecs/local/pkg/jdk-1.7.0_67/jre/lib/rt.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2015-04-06 10:22:35.030
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [/eecs/local/pkg/jdk-1.7.0_67/jre/lib/rt.jar is not on its project's build path]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getResolvedClasspathEntry(PackageFragmentRoot.java:573)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getJavadocBaseLocation(JavaDocLocations.java:310)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getJavadocLocation(JavaDocLocations.java:450)
+	at org.eclipse.jdt.ui.JavaUI.getJavadocLocation(JavaUI.java:985)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getBaseURL(JavaDocLocations.java:611)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:699)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:612)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:604)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2015-04-06 10:22:35.031
+!MESSAGE /eecs/local/pkg/jdk-1.7.0_67/jre/lib/rt.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2015-04-06 10:30:59.592
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [/eecs/local/pkg/jdk-1.7.0_67/jre/lib/rt.jar is not on its project's build path]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getResolvedClasspathEntry(PackageFragmentRoot.java:573)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getJavadocBaseLocation(JavaDocLocations.java:310)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getJavadocLocation(JavaDocLocations.java:450)
+	at org.eclipse.jdt.ui.JavaUI.getJavadocLocation(JavaUI.java:985)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getBaseURL(JavaDocLocations.java:611)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:699)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:612)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:604)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2015-04-06 10:30:59.593
+!MESSAGE /eecs/local/pkg/jdk-1.7.0_67/jre/lib/rt.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2015-04-06 10:42:35.492
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [/eecs/local/pkg/jdk-1.7.0_67/jre/lib/rt.jar is not on its project's build path]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getResolvedClasspathEntry(PackageFragmentRoot.java:573)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getJavadocBaseLocation(JavaDocLocations.java:310)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getJavadocLocation(JavaDocLocations.java:450)
+	at org.eclipse.jdt.ui.JavaUI.getJavadocLocation(JavaUI.java:985)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getBaseURL(JavaDocLocations.java:611)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:699)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:612)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:604)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2015-04-06 10:42:35.492
+!MESSAGE /eecs/local/pkg/jdk-1.7.0_67/jre/lib/rt.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2015-04-06 10:43:22.119
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [/eecs/local/pkg/jdk-1.7.0_67/jre/lib/rt.jar is not on its project's build path]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getResolvedClasspathEntry(PackageFragmentRoot.java:573)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getJavadocBaseLocation(JavaDocLocations.java:310)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getJavadocLocation(JavaDocLocations.java:450)
+	at org.eclipse.jdt.ui.JavaUI.getJavadocLocation(JavaUI.java:985)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getBaseURL(JavaDocLocations.java:611)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:699)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:612)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:604)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2015-04-06 10:43:22.119
+!MESSAGE /eecs/local/pkg/jdk-1.7.0_67/jre/lib/rt.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2015-04-06 10:43:35.879
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [/eecs/local/pkg/jdk-1.7.0_67/jre/lib/rt.jar is not on its project's build path]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getResolvedClasspathEntry(PackageFragmentRoot.java:573)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getJavadocBaseLocation(JavaDocLocations.java:310)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getJavadocLocation(JavaDocLocations.java:450)
+	at org.eclipse.jdt.ui.JavaUI.getJavadocLocation(JavaUI.java:985)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getBaseURL(JavaDocLocations.java:611)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:699)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:612)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:604)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2015-04-06 10:43:35.879
+!MESSAGE /eecs/local/pkg/jdk-1.7.0_67/jre/lib/rt.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2015-04-06 10:44:29.238
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [/eecs/local/pkg/jdk-1.7.0_67/jre/lib/rt.jar is not on its project's build path]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getResolvedClasspathEntry(PackageFragmentRoot.java:573)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getJavadocBaseLocation(JavaDocLocations.java:310)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getJavadocLocation(JavaDocLocations.java:450)
+	at org.eclipse.jdt.ui.JavaUI.getJavadocLocation(JavaUI.java:985)
+	at org.eclipse.jdt.internal.corext.javadoc.JavaDocLocations.getBaseURL(JavaDocLocations.java:611)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:699)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:612)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:604)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2015-04-06 10:44:29.239
+!MESSAGE /eecs/local/pkg/jdk-1.7.0_67/jre/lib/rt.jar is not on its project's build path

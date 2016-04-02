@@ -1,0 +1,225 @@
+Network/Internet
+Problem 1
+1.
+COM
+organization: VeriSign Global Registry Services
+address: Reston Virginia, United States
+phone: +1 703 925-6999
+creation: 1985-01-01
+source: IANA
+
+CA
+organization: Canadian Internet Registration Authority (CIRA)
+address:      Ottawa Ontario, Canada
+
+phone: +1 613 237 5335
+creation: 1987-05-14
+source: IANA
+
+ORG
+organisation: Public Interest Registry (PIR)
+address:      Reston Virginia, United States
+phone:        +1 703 889 5762
+created:      1985-01-01
+source:       IANA
+
+FR
+organisation: Association Française pour le Nommage Internet en Coopération (A.F.N.I.C.)
+address:      Immeuble Le Stephenson
+address:      78180 Montigny-le-Bretonneux, France
+phone: 	      +33 1 39 30 83 05
+created:      1986-09-02
+source:       IANA
+
+2.
+bell.ca
+Registrant: Bell Canada
+Creation date:         2000/10/11
+Updated date:          2014/07/02
+Expiry date:           2017/12/15
+Name servers:
+    dcoczd.bell.ca     204.101.196.46
+    dmog1a.bell.ca     198.235.69.155
+    dmog2a.bell.ca     198.235.69.156
+    toroon63nszp01.srvr.bell.ca 207.164.234.42
+    toroondcnszs01.srvr.bell.ca 207.236.176.30
+
+ottawa.edu
+Registrant:
+   Ottawa University
+   1001 South Cedar Street
+   Ottawa, KS 66067-3399
+   UNITED STATES
+Domain record activated:    09-Feb-1998
+Domain record last updated: 10-Jul-2014
+Domain expires:             31-Jul-2015
+Name Servers: 
+   NS1.P07.DYNECT.NET      208.78.70.7
+   NS2.P07.DYNECT.NET      204.13.250.7
+   NS3.P07.DYNECT.NET      208.78.71.7
+   NS4.P07.DYNECT.NET	   204.13.251.7
+
+umoncton.ca
+Registrant: Universit� de Moncton
+Creation date:         2000/10/04
+Expiry date:           2020/01/26
+Updated date:          2014/06/24
+Name servers:
+    altair.ci.umoncton.ca 139.103.2.3
+    bosoleil.ci.umoncton.ca 139.103.2.5
+    ns1.dal.ca         129.173.1.11
+
+sandiego.edu
+Registrant:
+   University of San Diego
+   5998 Alcala Park
+   Maher Hall Room 197
+   San Diego, CA 92110-2492
+   UNITED STATES
+Domain record activated:    20-Oct-2000
+Domain record last updated: 27-May-2014
+Domain expires:             31-Jul-2015
+Name Servers: 
+   NS-872.AWSDNS-45.NET      205.251.195.104   
+   NS-39.AWSDNS-04.COM       205.251.192.39
+   NS-1664.AWSDNS-16.CO.UK   205.251.198.128
+   NS-1509.AWSDNS-60.ORG     205.251.197.229
+
+3.
+No you cannot, it gives you an error message because the server is NOT in Canada.
+
+4.
+No you cannot, it gives you an error message because the server is NOT in Canada.
+
+5.
+traceroute to info.utcc.utoronto.ca (128.100.132.238), 30 hops max, 60 byte packets
+ 1  gateway-96.cs.yorku.ca (130.63.96.1)  12.496 ms
+ 2  border01.swx.yorku.ca (130.63.27.18)  0.964 ms
+ 3  york-hub-yorku-if-re.gtanet.ca (205.211.95.129)  1.279 ms
+ 4  ut-hub-york-hub-if-re.gtanet.ca (205.211.94.17)  1.819 ms
+ 5  utoronto2-ut-hub-if-re.gtanet.ca (205.211.94.130)  1.273 ms
+ 6  mcl-gpb.gw.utoronto.ca (128.100.96.7)  1.507 ms
+ 7  next-hop-2-mittere.ns.utoronto.ca (142.150.210.6)  1.484 ms
+ 8  info5.ns.utoronto.ca (128.100.132.238)  1.785 ms
+
+8 hops total
+yorku: 2 hops
+gta: 3 hops
+utoronto: 3 hops
+
+HTTP service and protocol
+Problem 2
+1.
+Request Headers
+Accept	text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding	gzip, deflate
+Accept-Language	en-US,en;q=0.5
+Authorization	Basic MjA0MTpiYW5hdA==
+Cache-Control	max-age=0
+Connection	keep-alive
+DNT	1
+Host	www.cse.yorku.ca
+If-Modified-Since	Sun, 18 Jan 2015 17:14:18 GMT
+If-None-Match	"981840-ba-50cf055fece80"
+User-Agent	Mozilla/5.0 (X11; Linux i686 on x86_64; rv:24.0) Gecko/20100101 Firefox/24.0
+
+Response Headers
+Connection	Keep-Alive
+Date	Wed, 21 Jan 2015 23:18:14 GMT
+Etag	"981840-ba-50cf055fece80"
+Keep-Alive	timeout=5, max=100
+Server	Apache/2.2.22 (Unix) DAV/2 mod_ssl/2.2.22 OpenSSL/1.0.0o PHP/5.5.9
+
+Response tag is an html document of what the html page consists of.
+
+2.
+In Response Headers they have a different Etag. In Request Headers they have different If-None-Match
+In the Response tag Simple.txt displays the content of what is seen when the page loads, while SIMPLE.html shows the html code.
+
+3.
+Commands:
+GET SIMPLE_IMAGE.html Content-Type: text/html
+GET SeaStar.jpg Content-Type: image/jpeg
+
+In the response tag for SIMPLE_IMAGE.html, there is html text while in SeaStar.jpg, there is just a picture of the sea star.
+
+Problem 3
+1.
+HTTP/1.1 200 OK
+Date: Wed, 21 Jan 2015 23:39:17 GMT
+Server: Apache/2.2.22 (Unix) DAV/2 mod_ssl/2.2.22 OpenSSL/1.0.0o PHP/5.5.9
+Last-Modified: Sat, 11 Jan 2014 03:05:38 GMT
+ETag: "9818c1-a1-4efa91df5c480"
+Accept-Ranges: bytes
+Content-Length: 161
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset="UTF-8" />
+<title>A simple HTML page</title> 
+</head>
+<body>
+<h2>A simple HTML page</h2>
+</body>
+</html>
+
+2.
+HTTP/1.1 200 OK
+Date: Wed, 21 Jan 2015 23:41:12 GMT
+Server: Apache/2.2.22 (Unix) DAV/2 mod_ssl/2.2.22 OpenSSL/1.0.0o PHP/5.5.9
+Last-Modified: Sun, 18 Jan 2015 17:16:50 GMT
+ETag: "9818c4-56-50cf05f0e2480"
+Accept-Ranges: bytes
+Content-Length: 86
+Content-Type: text/plain
+
+This is a text document for EECS2041.
+This is line 2.
+This is line 3 (the last one).
+
+3.
+HTTP/1.1 200 OK
+Date: Wed, 21 Jan 2015 23:48:40 GMT
+Server: Apache/2.2.22 (Unix) DAV/2 mod_ssl/2.2.22 OpenSSL/1.0.0o PHP/5.5.9
+Transfer-Encoding: chunked
+Content-Type: text/html
+
+281
+<HTML>
+<HEAD>
+    <TITLE>Server and Client information</TITLE>
+</HEAD>
+<BODY>
+<H1>Server and Client information</H1>
+<HR>
+<br>
+<b>
+  Server</b><br>
+  <PRE>
+  Server Name:       www.eecs.yorku.ca
+  Server Addr:    130.63.92.24
+  Listening on Port: 80
+  Server Software:   Apache/2.2.22 (Unix) DAV/2 mod_ssl/2.2.22 OpenSSL/1.0.0o PHP/5.5.9
+  Server Protocol:   http/1.1
+  Server Admin:      webmaster@cse.yorku.ca
+  CGI Version:        CGI/1.1
+  Script Name:        /~mkant/2041/Perl/Server_Client_A1_Info.pl
+  </PRE>
+<br>
+<b>
+  Client </b>
+  <br>
+  <pre>
+  Remote Port:    57167
+  Remote Address:   130.63.96.183 
+</PRE>
+<HR>
+</BODY>
+</HTML>
+
+0
+
+It is chunked because the sender does not need to know the length of the content. As well, the sender is able to transmit dynamically-generated content before knowing the size of that content. Also the reciever is sent the size of each chunk before the chunk itself so the reciever can tell when it is finished recieving the data for each chunk. The final chunk size is zero.
+
